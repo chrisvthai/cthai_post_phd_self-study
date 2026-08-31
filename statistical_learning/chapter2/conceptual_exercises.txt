@@ -1,0 +1,27 @@
+1.
+a: With a very large sample size, the potential effects of overfitting (and having less test error) is much lower. We can use a flexible method to fit the large number of observations.
+b: With so few observations, the chance of overfitting is very high if we try to use a flexible method. Best to use an inflexible method here.
+c: If the relationship between predictors and response is highly non-linear, a flexible method should perform better. The true function can be highly variable, meaning we cannot really make assumptions about it. A flexible model can capture more of the non-linearity.
+d. If the inherent variance (Var(e)) in the error terms is high, a flexible method would fit to this large degree in error, meaning a high chance of overfitting. The inflexible method will perform better.
+
+2.
+a: Regression, inference. CEO salary is the output variable with record profit, # of employees, and industry as input variables. If we just want to understand WHICH of these affect CEO salary, then we don't need to predict anything in the end.
+b: Classification, prdiction. Success or failure output is a given, and we are interested in a final success/failure prediction given product, marketing budget, etc.
+c: Regression, prediction. We want a quantitative % change, and have weekly data for all % changes in various markets to make a prediction from.
+
+3. 
+As models go from less flexible to more flexible
+
+Bias goes downward. More flexibility = less bias
+Variance goes upward. More flexibility = more variance
+Train error should be a downward curve. However, the more flexible we get, the less of a gain we get in performance (diminishing returns)
+Test error should look like a U. Test error decreases as flexibility increases, but there's a point where we overfit
+Bayes (irredicible) error curve is a flat line. There's nothing we can do about irreducible error regardless of model chosen
+
+5.
+If you care for nothing but prediction accuracy, then a flexible model will work very well. But if you need to interpret any part of the model (like checking which variables affect the output the most), using a more inflexible model helps making inferred parameters much easier to understand.
+
+6. Parametric assumes a certain kind of function. This way, only the parameters ("settings") of the function type need to be estimated, instead of trying to account for all variation in the data. Non-parametric assumes nothing, but estimating the true function becomes more difficult.
+
+Using a parametric model leads to better interpretabily of the underlying model. But b/c of the inherent assumption, if we assume wrong, our error rate will be very high.
+
